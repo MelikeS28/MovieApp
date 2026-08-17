@@ -1,0 +1,9 @@
+# Xcode & Build Files
+DerivedData/
+xcuserdata/
+
+# macOS Files
+.DS_Store
+
+# Secrets
+Config.xcconfig
