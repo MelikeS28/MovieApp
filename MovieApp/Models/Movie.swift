@@ -7,13 +7,15 @@
 
 import Foundation
 
-struct Movie: Decodable {
+struct Movie: Decodable, Encodable {
     let id: Int
     let title: String
     let overview: String
     let posterPath: String?
     let releaseDate: String?
     let voteAverage: Double
+    
+    var isFavorite: Bool? = false
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -26,7 +28,9 @@ struct Movie: Decodable {
     
     var postURL: URL? {
         guard let posterPath = posterPath else { return nil }
-        return URL(string: "https://image.tmdb.org/t/p/w500\(posterPath)")
+        
+        let urlString = APIContants.imageBaseURL + APIContants.mediumposterSizeW500 + posterPath
+        return URL(string: urlString)
     }
     
 }

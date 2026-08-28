@@ -7,3 +7,5 @@
 
 // Configuration settings file format documentation can be found at:
 // https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+
+TMDB_BEARER_TOKEN = eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMzYyOTZlN2U1NWU2OGQwOTNjNzg4NTBjNWVmODQyNiIsIm5iZiI6MTc3OTAyNTk0Ni45NTcsInN1YiI6IjZhMDljODFhZWYyMDU3MTYzMWRmYWM0ZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.v6ahaY1BGHSt5-pARsRLpBpZ_eRyutStw5qM13fpno8
